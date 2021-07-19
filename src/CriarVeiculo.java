@@ -5,9 +5,11 @@ public class CriarVeiculo {
 		// TODO Auto-generated method stub
 		
 		Veiculo primeiroVeiculo = new Veiculo();
-		primeiroVeiculo.modelo = "gol";
+		primeiroVeiculo.modelo = "Gol";
+		Veiculo segundoVeiculo = new Veiculo();
+		segundoVeiculo.modelo = "Palio";
 		System.out.println("Modelo do nosso primeiro Veiculo: " + primeiroVeiculo.modelo);
-
+		System.out.println("Modelo do nosso segundo Veiculo: " + segundoVeiculo.modelo);
 	}
 
 }
