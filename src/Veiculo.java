@@ -6,5 +6,6 @@ public class Veiculo {
 	String placa;
 	int ano;
 	int velocidade;
-	boolean motorLigado;	
+	boolean motorLigado;
+	Double preco;
 }
