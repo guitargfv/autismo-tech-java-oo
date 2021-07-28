@@ -5,6 +5,11 @@ public class Veiculo {
 	private String marca;
 	private int velocidade;
 	private Pessoa dono;
+	private static int total = 0;
+	
+	public Veiculo() {
+		Veiculo.total++;
+	}
 
 	public void acelerar(int velocidade) {
 		this.velocidade = this.velocidade + velocidade;
@@ -60,6 +65,9 @@ public class Veiculo {
 		return this.dono.getNome();
 	}
 	
+	public static int getTotal() {
+		return Veiculo.total;
+	}
 	
 
 }

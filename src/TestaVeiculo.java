@@ -52,7 +52,11 @@ public class TestaVeiculo {
 		Pessoa.envelhecer(pessoa);
 		System.out.println(pessoa.getIdade());
 
-		
+		Veiculo meuTerceiroVeiculo = new Veiculo();
+
+		System.out.println("O total de veiculos criados é: " + Veiculo.getTotal());
+		System.out.println("O total de veiculos criados é: " + meuTerceiroVeiculo.getTotal());
+
 	}
 
 }
