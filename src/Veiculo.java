@@ -1,13 +1,18 @@
 
 public class Veiculo {
 	private String cor;
-	private Double preco;
+	protected Double preco;
 	private String marca;
 	private int velocidade;
 	private Pessoa dono;
 	private static int total = 0;
 	
 	public Veiculo() {
+		Veiculo.total++;
+	}
+	
+	public Veiculo(String cor) {
+		this.cor = cor;
 		Veiculo.total++;
 	}
 
