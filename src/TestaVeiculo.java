@@ -2,7 +2,7 @@
 public class TestaVeiculo {
 
 	public static void main(String[] args) {
-		Veiculo meuPrimeiroVeiculo = new Veiculo();
+		Veiculo meuPrimeiroVeiculo = new Carro();
 		meuPrimeiroVeiculo.setCor("Preto");
 		System.out.println("A cor do meu veiculo é: " + meuPrimeiroVeiculo.getCor());
 		meuPrimeiroVeiculo.setMarca("Fiat");
@@ -17,7 +17,7 @@ public class TestaVeiculo {
 		System.out.println("O meu carro agora está a " + meuPrimeiroVeiculo.getVelocidade() + " km/h");
 		meuPrimeiroVeiculo.calculoDeValorComDesconto();
 
-		Veiculo meuSegundoVeiculo = new Veiculo();
+		Veiculo meuSegundoVeiculo = new Carro();
 		meuSegundoVeiculo.setCor("Amarelo");
 		System.out.println("A cor do meu primeiro veiculo é: " + meuPrimeiroVeiculo.getCor());
 		meuPrimeiroVeiculo.copiaCor(meuSegundoVeiculo);
@@ -52,7 +52,7 @@ public class TestaVeiculo {
 		Pessoa.envelhecer(pessoa);
 		System.out.println(pessoa.getIdade());
 
-		Veiculo meuTerceiroVeiculo = new Veiculo();
+		Veiculo meuTerceiroVeiculo = new Carro();
 
 		System.out.println("O total de veiculos criados é: " + Veiculo.getTotal());
 		System.out.println("O total de veiculos criados é: " + meuTerceiroVeiculo.getTotal());

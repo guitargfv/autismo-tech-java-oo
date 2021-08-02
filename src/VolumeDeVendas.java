@@ -7,6 +7,7 @@ public class VolumeDeVendas {
 		this.soma = 0.00;
 	}
 	
+//  Polimorfismo na passagem de parametros
 	public void registra(Veiculo veiculo, boolean desconto) {
 		if(desconto) {
 			soma += veiculo.calculoDeValorComDesconto();

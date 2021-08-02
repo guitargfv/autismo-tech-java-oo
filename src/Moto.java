@@ -1,5 +1,5 @@
 
-public class Moto extends Veiculo {
+public class Moto extends VeiculoAutomotor {
 
 	public Double calculoDeValorComDesconto() {
 		Double valorComDesconto = super.preco * 0.8;

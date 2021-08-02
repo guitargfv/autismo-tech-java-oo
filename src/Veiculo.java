@@ -1,11 +1,14 @@
 
-public class Veiculo {
+// Não pode instanciar objetos dessa classe pois e abstrata
+public abstract class Veiculo {
 	private String cor;
 	protected Double preco;
 	private String marca;
 	private int velocidade;
+	private int velocidadeMaxima;
 	private Pessoa dono;
 	private static int total = 0;
+	
 	
 	public Veiculo() {
 		Veiculo.total++;
@@ -20,6 +23,7 @@ public class Veiculo {
 		this.velocidade = this.velocidade + velocidade;
 	}
 
+//	quandor for abstrato sera um metodo sem corpo
 	public Double calculoDeValorComDesconto() {
 		Double valorComDesconto = this.preco * 0.9;
 		System.out.println("O valor do veiculo com desconto padrão é: " + valorComDesconto);
@@ -72,6 +76,14 @@ public class Veiculo {
 	
 	public static int getTotal() {
 		return Veiculo.total;
+	}
+
+	public int getVelocidadeMaxima() {
+		return velocidadeMaxima;
+	}
+
+	public void setVelocidadeMaxima(int velocidadeMaxima) {
+		this.velocidadeMaxima = velocidadeMaxima;
 	}
 	
 

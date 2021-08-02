@@ -29,14 +29,18 @@ public class CriarVeiculo {
 
 		System.out.println(Veiculo.getTotal());
 		
+
+//		Polimorfismo - utilizando um tipo mais generico
+		Veiculo poliVeiculo = new Carro();
+		
+//		Utilizando Polimorfismo com metodos
 		VolumeDeVendas v1 = new VolumeDeVendas();
 		v1.registra(c1, false);
 		v1.registra(m1, true);
 
 		System.out.println(v1.getSoma());
 		
-//		Polimorfismo - utilizando um tipo masi generico
-		Veiculo poliVeiculo = new Carro();
+		
 		
 //		Não funciona por ser de timo generico, utilizando casting para corrigir o problema na força
 //		poliVeiculo.ligar();
@@ -47,7 +51,18 @@ public class CriarVeiculo {
 		System.out.println(meuCarro.isMotorLigado());
 		
 		
+//		teste abstract
+//		Veiculo veiculo = new Veiculo();
 		
+		// Mostrar exemplo de multplas heranças
+		c1.setVelocidadeMaxima(200);
+		System.out.println("Velocidade maxima do carro: " + c1.getVelocidadeMaxima());
+		OficinaAutomotiva oficina = new OficinaAutomotiva();
+		oficina.remapDoMotor(c1);
+		System.out.println("Velocidade maxima do carro: " + c1.getVelocidadeMaxima());
+//		Demonstrar erro de polimorfismo atrelado a multiplas heranças
+//		oficina.remapDoMotor(b1);
+
 		
 		
 	}

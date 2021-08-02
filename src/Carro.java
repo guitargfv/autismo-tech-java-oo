@@ -1,7 +1,7 @@
 
-public class Carro extends Veiculo {
+public class Carro extends VeiculoTributavel {
 
-	//Criado para exemplificar problema de tipo mais especifico
+	// Criado para exemplificar problema de tipo mais especifico
 	private boolean motorLigado;
 
 	// utilizando metodo da classe pai dentro do nosso metodo sobrescrito
@@ -21,6 +21,12 @@ public class Carro extends Veiculo {
 
 	public void desligar() {
 		this.motorLigado = false;
+	}
+
+	@Override
+	public Double calculaTributo() {
+		// TODO Auto-generated method stub
+		return this.preco * 0.1;
 	}
 
 }
