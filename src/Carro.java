@@ -1,5 +1,5 @@
 
-public class Carro extends VeiculoTributavel {
+public class Carro extends VeiculoAutomotor implements Tributavel {
 
 	// Criado para exemplificar problema de tipo mais especifico
 	private boolean motorLigado;
@@ -24,9 +24,9 @@ public class Carro extends VeiculoTributavel {
 	}
 
 	@Override
-	public Double calculaTributo() {
-		// TODO Auto-generated method stub
-		return this.preco * 0.1;
+	public Double calculaValorImposto() {
+		// TODO Auto-generated method stub 
+		return super.preco * 0.2;
 	}
 
 }

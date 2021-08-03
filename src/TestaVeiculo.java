@@ -52,10 +52,21 @@ public class TestaVeiculo {
 		Pessoa.envelhecer(pessoa);
 		System.out.println(pessoa.getIdade());
 
-		Veiculo meuTerceiroVeiculo = new Carro();
+		Carro meuTerceiroVeiculo = new Carro();
 
 		System.out.println("O total de veiculos criados é: " + Veiculo.getTotal());
 		System.out.println("O total de veiculos criados é: " + meuTerceiroVeiculo.getTotal());
+		meuTerceiroVeiculo.setPreco(100000.00);
+		
+		Triciclo triciclo = new Triciclo();
+		triciclo.setPreco(80000.00);
+		
+		CalculadoraDeImposto calculadoraDeImposto = new CalculadoraDeImposto();
+		calculadoraDeImposto.calcula(meuTerceiroVeiculo);
+		System.out.println("O tributo total e: " + calculadoraDeImposto.getImposto());
+		calculadoraDeImposto.calcula(triciclo);
+		System.out.println("O tributo total e: " + calculadoraDeImposto.getImposto());
+		
 
 	}
 
